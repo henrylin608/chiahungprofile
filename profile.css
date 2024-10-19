@@ -1,0 +1,47 @@
+body{
+    background-image:url("pb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.frame{/*文圖並排*/
+    display:flex;
+}
+.left{/*左側文字*/
+    width: 625px;
+    text-align: left;
+}
+.right{/*右側照片*/
+    width: auto;
+    align-items: end; 
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.chiaimg{   /*照片大小及修邊*/
+    height:200px;
+    width:200px;  
+    border-radius: 25px 25px / 25px 25px;  /*照片圓形邊*/
+    
+}
+.container {/* . 點代表CLASS選擇器 */
+    max-width: 60%;
+    margin:auto;
+    background:#e2e2e2;
+    padding: 20px;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif; /*字體*/
+}
+h1 { 
+    text-align:center;
+    color: #333;
+    border-style:solid;  
+}
+h2 {
+    color: #444;
+    margin-top: 20px;/* 區塊向上空間 */
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+}
