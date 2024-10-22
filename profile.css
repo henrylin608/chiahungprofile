@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position:center;
 }
 .frame{/*文圖並排*/
     display:flex;
@@ -16,7 +17,7 @@ body{
     align-items: end; 
     margin-right: 40px;
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 10px ;
 }
 .chiaimg{   /*照片大小及修邊*/
     height:200px;
@@ -34,7 +35,8 @@ body{
 h1 { 
     text-align:center;
     color: #333;
-    border-style:solid;  
+    border-style:solid; 
+    line-height: 80px; 
 }
 h2 {
     color: #444;
@@ -45,3 +47,30 @@ h2 {
 p {
     font-size: 16px;
 }
+
+
+/* RWD設計 */
+
+@media screen and (max-width:500px) {
+    .frame{/*取消文圖並排*/
+        display:block;
+    }
+    .left{/*左側文字更改大小*/
+        text-align: left;
+        width:225px;  
+        margin-right: 40px;
+    }
+    .right{/*右側照片更改大小*/
+        margin-right: 400px;
+        margin-left: 40px;
+        margin-top: 10px ;
+    }
+    .chiaimg{  /*照片大小及修邊*/
+        height:200px;
+        width:200px;  
+        border-radius: 25px 25px / 25px 25px;  /*照片圓形邊*/
+        
+    }
+    
+}
+
